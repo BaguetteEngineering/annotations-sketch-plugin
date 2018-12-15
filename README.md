@@ -1,4 +1,4 @@
-# Presentation
+## Presentation
 
 This is a Sketch plugin for hiding/showing all layers named `Number` or `Arrow`.
 
