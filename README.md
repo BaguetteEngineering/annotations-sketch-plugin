@@ -2,12 +2,16 @@
 
 This is a Sketch plugin for hiding/showing all layers named `Number` or `Arrow`.
 
-It works by setting the layers opacity to `0` or `1`. It affects all pages of the document.
+It works by setting the layers opacity to `0` or `1`. 
+
+It affects all pages of the open document.
 
 It's useful when a same Sketch document is used for exporting:
 
 - images – _with_ numbers and arrows
 - prototypes – _without_ numbers and arrows
+
+---
 
 ![](screenshot.png)
 
