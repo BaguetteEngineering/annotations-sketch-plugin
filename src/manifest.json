@@ -1,0 +1,24 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Hide",
+      "identifier": "hide",
+      "script": "./hide.js"
+    },
+    {
+      "name": "Show",
+      "identifier": "show",
+      "script": "./show.js"
+    }
+  ],
+  "menu": {
+    "title": "Numbers and Arrows",
+    "items": [
+      "hide",
+      "show"
+    ]
+  }
+}
