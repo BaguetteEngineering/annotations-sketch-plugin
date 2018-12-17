@@ -1,12 +1,12 @@
 {
   "name": "hide-specifications-overlay",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "engines": {
     "sketch": ">=3.0"
   },
   "skpm": {
-    "name": "Hide Specifications Overlay",
-    "description": "Hide/show all layers named 'Number' or 'Arrow'.",
+    "name": "Hide Annotations Overlay",
+    "description": "Hide/show all layer groups named 'Annotations'.",
     "manifest": "src/manifest.json",
     "main": "hide-specifications-overlay.sketchplugin",
     "assets": [

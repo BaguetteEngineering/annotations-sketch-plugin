@@ -107,11 +107,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   var document = __webpack_require__(/*! sketch/dom */ "sketch/dom").getSelectedDocument();
 
-  var numbers = document.getLayersNamed('Number');
-  var arrows = document.getLayersNamed('Arrow');
-  var layers = numbers.concat(arrows);
+  var layers = document.getLayersNamed('Annotations');
   layers.forEach(function (layer) {
     layer.style.opacity = 1;
+    layer.locked = false;
   });
   sketch__WEBPACK_IMPORTED_MODULE_0___default.a.UI.message("".concat(layers.length, " layers shown"));
 });

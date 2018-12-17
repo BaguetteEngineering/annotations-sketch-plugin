@@ -15,16 +15,16 @@
     }
   ],
   "menu": {
-    "title": "Numbers and Arrows",
+    "title": "Annotations",
     "items": [
       "hide",
       "show"
     ]
   },
-  "version": "0.1.0",
-  "description": "Hide/show all layers named 'Number' or 'Arrow'.",
-  "name": "Hide Specifications Overlay",
-  "identifier": "Hide Specifications Overlay",
+  "version": "0.2.0",
+  "description": "Hide/show all layer groups named 'Annotations'.",
+  "name": "Hide Annotations Overlay",
+  "identifier": "Hide Annotations Overlay",
   "disableCocoaScriptPreprocessor": true,
   "appcast": "https://raw.githubusercontent.com//master/.appcast.xml",
   "author": "Bastien Petit",

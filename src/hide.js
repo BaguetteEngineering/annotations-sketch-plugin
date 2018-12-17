@@ -3,12 +3,11 @@ import sketch from "sketch";
 
 export default function() {
   const document = require('sketch/dom').getSelectedDocument()
-  const numbers = document.getLayersNamed('Number');
-  const arrows = document.getLayersNamed('Arrow');
-  const layers = numbers.concat(arrows);
+  const layers = document.getLayersNamed('Annotations');
 
   layers.forEach(layer => {
     layer.style.opacity = 0;
+    layer.locked = true;
   });
 
   sketch.UI.message(`${layers.length} layers hidden`);
