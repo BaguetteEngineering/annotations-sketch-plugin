@@ -6,8 +6,7 @@ export default function() {
   const layers = document.getLayersNamed('Annotations');
 
   layers.forEach(layer => {
-    layer.style.opacity = 0;
-    layer.locked = true;
+    layer.hidden = true;
   });
 
   sketch.UI.message(`${layers.length} layers hidden 🙈`);

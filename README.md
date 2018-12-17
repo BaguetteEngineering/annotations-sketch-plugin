@@ -4,8 +4,6 @@ This is a Sketch plugin for hiding/showing all layer groups named `Annotations`.
 
 It runs on all pages of the open document.
 
-It works by toggling the opacity attribute (`0%`/`100%`) on all your `Annotations` layers. It also locks/unlocks the groups so that you don't select them accidentally when they are hidden.
-
 It's useful when a same Sketch document is used for exporting:
 
 - images – _with_ annotations
