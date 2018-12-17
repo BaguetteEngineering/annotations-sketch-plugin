@@ -10,5 +10,5 @@ export default function() {
     layer.locked = false;
   });
 
-  sketch.UI.message(`${layers.length} layers shown`);
+  sketch.UI.message(`${layers.length} layers shown 🐵`);
 }

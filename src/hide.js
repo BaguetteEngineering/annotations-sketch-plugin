@@ -10,5 +10,5 @@ export default function() {
     layer.locked = true;
   });
 
-  sketch.UI.message(`${layers.length} layers hidden`);
+  sketch.UI.message(`${layers.length} layers hidden 🙈`);
 }

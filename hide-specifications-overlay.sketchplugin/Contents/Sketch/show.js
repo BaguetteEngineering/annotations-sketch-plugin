@@ -112,7 +112,7 @@ __webpack_require__.r(__webpack_exports__);
     layer.style.opacity = 1;
     layer.locked = false;
   });
-  sketch__WEBPACK_IMPORTED_MODULE_0___default.a.UI.message("".concat(layers.length, " layers shown"));
+  sketch__WEBPACK_IMPORTED_MODULE_0___default.a.UI.message("".concat(layers.length, " layers shown \uD83D\uDC35"));
 });
 
 /***/ }),
