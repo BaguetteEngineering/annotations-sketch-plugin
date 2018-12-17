@@ -1,19 +1,25 @@
-## Presentation
+# Presentation
 
-This is a Sketch plugin for hiding/showing all layers named `Number` or `Arrow`.
+This is a Sketch plugin for hiding/showing all layer groups named `Annotations`.
 
-It works by setting the layers opacity to `0` or `1`. 
+It runs on all pages of the open document.
 
-It affects all pages of the open document.
+It works by toggling the opacity attribute (`0%`/`100%`) on all your `Annotations` layers. It also locks/unlocks the groups so that you don't select them accidentally when they are hidden.
 
 It's useful when a same Sketch document is used for exporting:
 
-- images – _with_ numbers and arrows
-- prototypes – _without_ numbers and arrows
+- images – _with_ annotations
+- prototypes – _without_ annotations
 
 ---
 
 ![](screenshot.png)
+
+# Installation
+
+Double-click the `hide-specifications-overlay.sketchplugin` file in your Finder.
+
+# Developers
 
 _This plugin was created using `skpm`. For a detailed explanation on how things work, checkout the [skpm Readme](https://github.com/skpm/skpm/blob/master/README.md)._
 
