@@ -1,14 +1,14 @@
 {
-  "name": "hide-specifications-overlay",
+  "name": "annotations",
   "version": "0.2.0",
   "engines": {
     "sketch": ">=3.0"
   },
   "skpm": {
-    "name": "Hide Annotations Overlay",
+    "name": "Annotations",
     "description": "Hide/show all layer groups named 'Annotations'.",
     "manifest": "src/manifest.json",
-    "main": "hide-specifications-overlay.sketchplugin",
+    "main": "annotations.sketchplugin",
     "assets": [
       "assets/**/*"
     ]
@@ -22,5 +22,5 @@
   "devDependencies": {
     "@skpm/builder": "^0.5.11"
   },
-  "author": "Bastien Petit <hello@bastienpetit.com>"
+  "author": "Baguette Engineering <hello@baguette.engineering>"
 }
