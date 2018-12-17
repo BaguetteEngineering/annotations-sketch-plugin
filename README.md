@@ -2,7 +2,7 @@
 
 This is a Sketch plugin for hiding/showing all layer groups named `Annotations`.
 
-It runs on all pages of the open document.
+It runs on all pages and artboards of the open document.
 
 It's useful when a same Sketch document is used for exporting:
 
@@ -15,7 +15,7 @@ It's useful when a same Sketch document is used for exporting:
 
 # Installation
 
-Double-click the `hide-specifications-overlay.sketchplugin` file in your Finder.
+Double-click the `annotations.sketchplugin` file in your Finder.
 
 # Developers
 
