@@ -1,6 +1,6 @@
 {
   "name": "annotations",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "engines": {
     "sketch": ">=3.0"
   },
@@ -23,7 +23,7 @@
     "@skpm/builder": "^0.5.11"
   },
   "author": "Baguette Engineering <hello@baguette.engineering>",
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/BaguetteEngineering/annotations-sketch-plugin.git"
   }
