@@ -6,7 +6,7 @@
   },
   "skpm": {
     "name": "Annotations",
-    "description": "Hide/show all layer groups named 'Annotations'.",
+    "description": "Hide/show layer groups named 'Annotations'.",
     "manifest": "src/manifest.json",
     "main": "annotations.sketchplugin",
     "assets": [

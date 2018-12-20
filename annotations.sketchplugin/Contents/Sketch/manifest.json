@@ -22,7 +22,7 @@
     ]
   },
   "version": "0.2.0",
-  "description": "Hide/show all layer groups named 'Annotations'.",
+  "description": "Hide/show layer groups named 'Annotations'.",
   "name": "Annotations",
   "identifier": "Annotations",
   "disableCocoaScriptPreprocessor": true,
