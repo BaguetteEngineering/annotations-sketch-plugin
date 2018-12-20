@@ -91,6 +91,45 @@ var exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/annotations.js":
+/*!****************************!*\
+  !*** ./src/annotations.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var sketch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! sketch */ "sketch");
+/* harmony import */ var sketch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(sketch__WEBPACK_IMPORTED_MODULE_0__);
+ // Documentation: https://developer.sketchapp.com/reference/api/
+// Hide/show all 'Annotations' layers
+
+/* harmony default export */ __webpack_exports__["default"] = (function (shouldShow) {
+  var document = __webpack_require__(/*! sketch/dom */ "sketch/dom").getSelectedDocument();
+
+  var layers = document.getLayersNamed("Annotations"); // Display message when no 'Annotations' layer can be found
+
+  if (layers.length === 0) {
+    var verb = shouldShow ? "show" : "hide";
+    sketch__WEBPACK_IMPORTED_MODULE_0___default.a.UI.message("Could not find any 'Annotations' layer group to ".concat(verb, "."));
+    return;
+  } // Hide/show layers
+
+
+  layers.forEach(function (layer) {
+    layer.hidden = !shouldShow;
+  }); // Display confirmation message
+
+  if (shouldShow) {
+    sketch__WEBPACK_IMPORTED_MODULE_0___default.a.UI.message("\uD83D\uDC35 ".concat(layers.length, " layers shown. "));
+  } else {
+    sketch__WEBPACK_IMPORTED_MODULE_0___default.a.UI.message("\uD83D\uDE48 ".concat(layers.length, " layers hidden. "));
+  }
+});
+
+/***/ }),
+
 /***/ "./src/show.js":
 /*!*********************!*\
   !*** ./src/show.js ***!
@@ -100,18 +139,10 @@ var exports =
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var sketch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! sketch */ "sketch");
-/* harmony import */ var sketch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(sketch__WEBPACK_IMPORTED_MODULE_0__);
- // documentation: https://developer.sketchapp.com/reference/api/
+/* harmony import */ var _annotations__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./annotations */ "./src/annotations.js");
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  var document = __webpack_require__(/*! sketch/dom */ "sketch/dom").getSelectedDocument();
-
-  var layers = document.getLayersNamed('Annotations');
-  layers.forEach(function (layer) {
-    layer.hidden = false;
-  });
-  sketch__WEBPACK_IMPORTED_MODULE_0___default.a.UI.message("".concat(layers.length, " layers shown \uD83D\uDC35"));
+  Object(_annotations__WEBPACK_IMPORTED_MODULE_0__["default"])(true);
 });
 
 /***/ }),
