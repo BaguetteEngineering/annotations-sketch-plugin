@@ -15,7 +15,7 @@ It's useful when you use a same Sketch document for exporting:
 
 # Installation
 
-1. Download the latest version of the plugin.
+1. Download the [latest version of the plugin](https://github.com/BaguetteEngineering/annotations-sketch-plugin/releases/download/v0.3.0/annotations.sketchplugin.zip) (v0.3.0).
 
 2. Double-click the `annotations.sketchplugin` file to install it.
 
