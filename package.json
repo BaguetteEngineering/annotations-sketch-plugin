@@ -22,5 +22,9 @@
   "devDependencies": {
     "@skpm/builder": "^0.5.11"
   },
-  "author": "Baguette Engineering <hello@baguette.engineering>"
+  "author": "Baguette Engineering <hello@baguette.engineering>",
+  "repository" : {
+    "type": "git",
+    "url": "git+https://github.com/BaguetteEngineering/annotations-sketch-plugin.git"
+  }
 }

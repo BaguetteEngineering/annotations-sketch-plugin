@@ -26,7 +26,7 @@
   "name": "Annotations",
   "identifier": "Annotations",
   "disableCocoaScriptPreprocessor": true,
-  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml",
+  "appcast": "https://raw.githubusercontent.com/BaguetteEngineering/annotations-sketch-plugin/master/.appcast.xml",
   "author": "Baguette Engineering",
   "authorEmail": "hello@baguette.engineering"
 }
