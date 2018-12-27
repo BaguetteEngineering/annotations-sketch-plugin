@@ -12,13 +12,20 @@
       "name": "Show",
       "identifier": "show",
       "script": "show.js"
+    },
+    {
+      "name": "Create 'Annotations' group from selection",
+      "identifier": "create",
+      "script": "create.js"
     }
   ],
   "menu": {
     "title": "Annotations",
     "items": [
       "hide",
-      "show"
+      "show",
+      "-",
+      "create"
     ]
   },
   "version": "0.3.0",
