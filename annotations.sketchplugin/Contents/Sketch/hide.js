@@ -86,75 +86,63 @@ var exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/hide.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/commands/hide.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/annotations.js":
-/*!****************************!*\
-  !*** ./src/annotations.js ***!
-  \****************************/
+/***/ "./src/commands/hide.js":
+/*!******************************!*\
+  !*** ./src/commands/hide.js ***!
+  \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var sketch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! sketch */ "sketch");
-/* harmony import */ var sketch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(sketch__WEBPACK_IMPORTED_MODULE_0__);
- // Documentation: https://developer.sketchapp.com/reference/api/
-// Hide/show all 'Annotations' layers
+/* harmony import */ var _modules_hideAnnotations__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/hideAnnotations */ "./src/modules/hideAnnotations.js");
 
-/* harmony default export */ __webpack_exports__["default"] = (function (shouldShow) {
-  var document = __webpack_require__(/*! sketch/dom */ "sketch/dom").getSelectedDocument();
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  Object(_modules_hideAnnotations__WEBPACK_IMPORTED_MODULE_0__["default"])(true);
+});
 
+/***/ }),
+
+/***/ "./src/modules/hideAnnotations.js":
+/*!****************************************!*\
+  !*** ./src/modules/hideAnnotations.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var sketch = __webpack_require__(/*! sketch/dom */ "sketch/dom");
+
+var ui = __webpack_require__(/*! sketch/ui */ "sketch/ui"); // Hide/show all 'Annotations' layers
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (shouldHide) {
+  var document = sketch.getSelectedDocument();
   var layers = document.getLayersNamed("Annotations"); // Display message when no 'Annotations' layer can be found
 
   if (layers.length === 0) {
-    var verb = shouldShow ? "show" : "hide";
-    sketch__WEBPACK_IMPORTED_MODULE_0___default.a.UI.message("Could not find any 'Annotations' layer group to ".concat(verb, "."));
+    var verb = shouldHide ? "hide" : "show";
+    ui.message("Could not find any 'Annotations' layer group to ".concat(verb, "."));
     return;
   } // Hide/show layers
 
 
   layers.forEach(function (layer) {
-    layer.hidden = !shouldShow;
+    layer.hidden = shouldHide;
   }); // Display confirmation message
 
-  if (shouldShow) {
-    sketch__WEBPACK_IMPORTED_MODULE_0___default.a.UI.message("\uD83D\uDC35 ".concat(layers.length, " layers shown. "));
+  if (shouldHide) {
+    ui.message("\uD83D\uDE48 ".concat(layers.length, " layers hidden. "));
   } else {
-    sketch__WEBPACK_IMPORTED_MODULE_0___default.a.UI.message("\uD83D\uDE48 ".concat(layers.length, " layers hidden. "));
+    ui.message("\uD83D\uDC35 ".concat(layers.length, " layers shown. "));
   }
 });
-
-/***/ }),
-
-/***/ "./src/hide.js":
-/*!*********************!*\
-  !*** ./src/hide.js ***!
-  \*********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _annotations__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./annotations */ "./src/annotations.js");
-
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  Object(_annotations__WEBPACK_IMPORTED_MODULE_0__["default"])(false);
-});
-
-/***/ }),
-
-/***/ "sketch":
-/*!*************************!*\
-  !*** external "sketch" ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("sketch");
 
 /***/ }),
 
@@ -166,6 +154,17 @@ module.exports = require("sketch");
 /***/ (function(module, exports) {
 
 module.exports = require("sketch/dom");
+
+/***/ }),
+
+/***/ "sketch/ui":
+/*!****************************!*\
+  !*** external "sketch/ui" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("sketch/ui");
 
 /***/ })
 

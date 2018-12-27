@@ -6,12 +6,12 @@
     {
       "name": "Hide",
       "identifier": "hide",
-      "script": "./hide.js"
+      "script": "./commands/hide.js"
     },
     {
       "name": "Show",
       "identifier": "show",
-      "script": "./show.js"
+      "script": "./commands/show.js"
     }
   ],
   "menu": {

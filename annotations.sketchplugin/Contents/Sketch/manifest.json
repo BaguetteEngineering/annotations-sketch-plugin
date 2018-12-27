@@ -21,7 +21,7 @@
       "show"
     ]
   },
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Hide/show layer groups named 'Annotations'.",
   "name": "Annotations",
   "identifier": "Annotations",
