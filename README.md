@@ -1,6 +1,6 @@
 # Annotations Sketch Plugin
 
-This is a [Sketch](https://www.sketchapp.com/) plugin for hiding/showing annotations on a functional specifications document. 
+This is a [Sketch](https://www.sketchapp.com/) plugin for hiding/showing annotations on a functional specifications document.
 
 It's useful when you use a same Sketch document for exporting:
 
@@ -25,7 +25,7 @@ Put your annotations in groups named "Annotations". You can create these groups 
 
 # Installation
 
-**1.** Download the [latest version of the plugin](https://github.com/BaguetteEngineering/annotations-sketch-plugin/releases/download/v0.4.0/annotations.sketchplugin.zip) (v0.4.0).
+**1.** Download the [latest version of the plugin](https://github.com/BaguetteEngineering/annotations-sketch-plugin/releases/latest/download/annotations.sketchplugin.zip) ![Package version](https://badge.fury.io/gh/BaguetteEngineering%2Fannotations-sketch-plugin.svg).
 
 **2.** Unzip the file.
 
