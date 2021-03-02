@@ -1,6 +1,6 @@
 {
   "name": "annotations",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "engines": {
     "sketch": ">=3.0"
   },
