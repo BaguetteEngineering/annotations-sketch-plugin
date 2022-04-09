@@ -22,7 +22,7 @@
   "devDependencies": {
     "@skpm/builder": "^0.7.11",
     "kind-of": ">=6.0.3",
-    "minimist": ">=1.2.3",
+    "minimist": ">=1.2.6",
     "serialize-javascript": ">=3.1.0",
     "ssri": ">=8.0.1"
   },
